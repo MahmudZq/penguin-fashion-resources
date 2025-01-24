@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./icons/logo-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,56 +13,105 @@
         rel="stylesheet">
     <title>Penguin Fashion</title>
     <style>
-        .bebas-neue{
-        font-family: "Bebas Neue", serif;
+        .bebas-neue {
+            font-family: "Bebas Neue", serif;
         }
-        .roboto{
-        font-family: "Roboto", serif;
+
+        .roboto {
+            font-family: "Roboto", serif;
         }
     </style>
 </head>
 
 <body>
-    <header class="bg-[#FFFBF0] h-full max-w-1440 pt-10">
-        <nav>
-            <div class="flex justify-around items-center pb-10">
-                <div class="">
-                    <img src="./icons/logo.png" alt="Penguin Fashion Logo">
+    <header >
+        <nav class="bg-[#FFFBF0] pt-10 flex flex-col justify-center xl:flex-row md:justify-center xl:justify-around md:items-center md:pb-10 ">
+            <!-- <div class="border-8 border-amber-500"> -->
+                <div>
+                    <img src="./icons/logo.png" class="w-2/3 md:w-1/2 mx-auto xl:mx-0" alt="Penguin Fashion Logo">
                 </div>
-                <div class="robot text-base font-medium text-[#3C3C3C] flex gap-10">
-                    <div class="h2">Home</div>
-                    <div class="h2">Product</div>
-                    <div class="h2">About Us</div>
-                    <div class="h2">Contact Us</div>
+                <div class="robot text-base font-medium text-[#3C3C3C] flex invisible md:visible md:gap-5 xl:gap-10 ">
+                    <a href="#home">
+                        <div class="h2 cursor-pointer">Home</div>
+                    </a>
+                    <a href="#product">
+                        <div class="h2 cursor-pointer">Product</div>
+                    </a>
+                    <a href="#about-us">
+                        <div class="h2 cursor-pointer">About Us</div>
+                    </a>
+                    <a href="#contact-us">
+                        <div class="h2 cursor-pointer">Contact Us</div>
+                    </a>
                 </div>
             </div>
         </nav>
 
     </header>
-    <main>
-        <section class="banner bg-[#FFFBF0] h-full max-w-1440">
-            <div class="md:flex flex-row justify-around items-center">
-                <div class="flex flex-col gap-4">
+    
+        <section class="banner bg-[#FFFBF0]  pb-5">
+            <div class="md:flex flex-row justify-around items-center px-4">
+                <div class="flex flex-col gap-4 ">
                     <h1 class="bebas-neue text-7xl text-[#FABE4C]">Be the Penguins<br>
                         <span class="text-[#363958]">of Winter</span>
 
                     </h1>
-                    <p class="roboto text-base text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing 
+                    <p class="roboto text-base text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing
                         and typesetting industry.
 
                     </p>
-                    <button class="w-50 h-15 bg-emerald-700 text-white roboto rounded-2xl flex flex-row items-center justify-center gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                          </svg>
-                          <h2>Buy Now</h2>
-                    </button>
-
+                    <a href="#buy-now">
+                        <button
+                            class="w-50 h-15 uppercase bg-linear-to-t from-[#9ac000] to-[#A4BC46] text-white roboto rounded-2xl flex flex-row items-center justify-center gap-3 cursor-pointer font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            <h2>Buy Now</h2>
+                        </button>
+                    </a>
                 </div>
                 <div>
                     <img src="./images/model.png" alt="Model Image">
                 </div>
             </div>
+        </section>
+        <main class="max-w-7xl mx-auto my-auto">
+
+        <section>
+
+            <h3 class="bebas-neue text-5xl text-[#363958] pb-5">WOMAN JACKET</h3>
+   
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 space-x-10">
+            
+    
+                <div class=" space-y-4 p-5 rounded-3xl drop-shadow-lg ">
+                    <img src="./images/jacket-1.png" class="bg-[#F1F1F1] rounded-3xl p-5 h-80" alt="">
+
+                </div>
+          
+
+                <div class=" space-y-4 p-5 rounded-3xl drop-shadow-lg ">
+                    <img src="./images/jacket-2.png" class="bg-[#F1F1F1] rounded-3xl p-5 h-80" alt="">
+
+                    
+
+                </div>
+
+                <div class=" space-y-4 p-5 rounded-3xl drop-shadow-lg ">
+                    <img src="./images/jacket-3.png" class="bg-[#F1F1F1] rounded-3xl p-5 h-80" alt="">
+
+                    
+
+                </div>
+
+             
+                </div>
+
+
+            
+
         </section>
     </main>
 
